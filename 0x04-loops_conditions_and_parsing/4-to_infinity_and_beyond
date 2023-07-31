@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script displays "To infinity and beyond" indefinitely.
+
+# Define the function to display the message
+display_message() {
+  echo "To infinity and beyond"
+}
+
+# Trap the Ctrl+C signal (SIGINT) to handle script termination
+trap 'echo ""; exit' INT
+
+# Infinite loop to display the message
+while true; do
+  display_message
+  sleep 2
+done
+

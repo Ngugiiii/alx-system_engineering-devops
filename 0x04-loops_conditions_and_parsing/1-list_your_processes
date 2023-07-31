@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script displays a list of currently running processes.
+
+# Display a header for the process list
+printf "%-8s %-8s %-20s %-10s %s\n" "PID" "PPID" "USER" "TTY" "COMMAND"
+
+# Use ps command to display the process list
+ps -efH | awk '{printf "%-8s %-8s %-20s %-10s %s\n", $2, $3, $1, $7, $8}'
+

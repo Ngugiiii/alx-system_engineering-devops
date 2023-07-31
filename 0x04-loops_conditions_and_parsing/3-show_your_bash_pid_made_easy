@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script displays the PID, along with the process name, of processes whose name contains the word "bash."
+
+# Get the current process ID (PID) of the running script
+current_pid=$$
+
+# Get the PIDs of processes whose name contains "bash"
+bash_pids=$(pgrep -f bash)
+
+# Display the PIDs and process names
+for pid in $bash_pids; do
+  # Skip the script's own PID from the output
+  if [ "$pid" -ne "$current_pid" ]; then
+    process_name=$(ps -o comm= -p "$pid")
+    echo "$pid $process_name"
+  fi
+done
+

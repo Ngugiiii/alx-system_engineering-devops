@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script kills the process 7-highlander.
+
+# Find and kill the process whose name contains "7-highlander"
+pkill -SIGTERM -f "7-highlander"
+

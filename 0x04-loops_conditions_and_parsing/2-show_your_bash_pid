@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This script displays lines containing the bash word, thus allowing you to easily get the PID of your Bash process.
+# shellcheck disable=SC2009
+
+# Get the current process ID (PID) of the running script
+current_pid=$$
+
+# Display the PID
+echo "The PID of this script is: $current_pid"
+
+# Display lines containing the word "bash" in the running processes
+ps -ef | grep bash | grep -v grep | grep -v "$current_pid"
+
