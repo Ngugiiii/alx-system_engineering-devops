@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Explantion What type of network a computer in local is connected to?
+
+echo "3"
+echo "2"
+echo "1"
