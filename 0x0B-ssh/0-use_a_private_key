@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This Script connects to the server
+
+ssh -i ~/.ssh/school
