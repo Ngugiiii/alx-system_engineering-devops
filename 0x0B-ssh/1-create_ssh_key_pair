@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-#generating ssh key
+# generating ssh key
 
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/school -N betty
+echo "RSA key pair created successfullyy!"
