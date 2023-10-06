@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-# Explanation: This script displays listening ports and the PID/Program name to which each socket belongs.
-
-# Command to display listening sockets with PID/Program name
-sudo netstat -tulnep
-
