@@ -1,0 +1,25 @@
+Have you ever wondered what happens when you type "https://www.google.com" in your browser and hit Enter? This seemingly simple action triggers a complex chain of events that involve multiple components of the web stack. In this blog post, we'll break down the process step by step, covering DNS requests, TCP/IP, firewalls, HTTPS/SSL, load balancers, web servers, application servers, and databases.
+
+DNS Request:
+Your journey starts with a DNS (Domain Name System) request. When you enter "https://www.google.com," your browser needs to translate the human-readable domain name into an IP address. It sends a DNS request to a DNS server, which responds with the IP address associated with Google's servers.
+
+TCP/IP:
+With the IP address in hand, your browser initiates a connection using TCP/IP (Transmission Control Protocol/Internet Protocol). TCP ensures reliable data transmission by breaking it into packets and verifying that they arrive intact. IP handles routing and addressing to ensure the data reaches its destination.
+
+Firewall:
+The data packets must pass through firewalls, which act as a security barrier. Firewalls are set up to allow or block specific types of traffic, and they play a crucial role in protecting the network from unauthorized access or malicious activity.
+
+HTTPS/SSL:
+To secure your connection, your browser and the web server engage in an SSL/TLS (Secure Sockets Layer/Transport Layer Security) handshake. This process encrypts the data being exchanged, ensuring that it remains private and secure. Once the handshake is complete, a secure channel is established.
+
+Load Balancer:
+Google serves millions of users worldwide, and to distribute the load efficiently, they employ load balancers. Load balancers route incoming requests to a pool of web servers to ensure even distribution and prevent any single server from becoming overwhelmed.
+
+Web Server:
+Your request is then received by one of Google's web servers. These servers host web pages and can handle a vast number of requests simultaneously. The web server processes your request and, if the requested page exists, retrieves it.
+
+Application Server:
+In the case of dynamic content, such as search results, the web server may need to interact with an application server. Application servers process the request, communicate with databases, and generate the appropriate response. Google uses various technologies and services here to deliver accurate and fast results.
+
+Database:
+For services like Google, where you interact with vast amounts of data, a database is at the core. Databases store and manage data, providing quick access to the information your request requires. Google employs sophisticated databases to serve search results, ads, and other services.
